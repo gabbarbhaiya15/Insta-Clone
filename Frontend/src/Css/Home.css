@@ -1,0 +1,74 @@
+
+   /* styling of Input */
+   .inputc {
+    width: 24rem !important ;
+    
+    margin-top: 0px !important;
+    position: absolute;
+    top: -1rem;
+    color: #000000;
+    font-size: 0.9rem;
+    background-color: transparent;
+
+    
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+   /* styling of animated border */
+   .cinput-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   
+   #post-profile{
+    width: 3rem;
+    height: 3rem;
+    
+    clip-path: circle(  at center);
+    position: relative;
+    top: 1px;
+    
+}
+#post-dots{
+   
+    position: absolute;
+    left: 90%;
+    margin-top: 10px;
+}
+#post-box{
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 28vw !important;
+    height: 60vh !important;
+    background-color:white;
+    border-radius: 10px;
+   
+
+}
+#post{
+    width: 27.3vw !important;
+    height: 42vh !important;
+   border-radius: 0.5rem;
+justify-content: space-around;
+}
+.post-username{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.save{
+    position: relative;
+    left: 18rem !important;
+}
+#sent{
+    position: relative;
+    top: 0.5rem;
+}

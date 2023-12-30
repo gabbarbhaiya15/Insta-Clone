@@ -1,0 +1,87 @@
+
+.profile-logo,.signup-logo,.login-logo, .post-logo {
+    margin-left: 2rem;
+}
+
+nav{
+    width: 100vw;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+   
+    
+}
+
+.group {
+    display: flex;
+     width: 100vw;
+
+    line-height: 28px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+ 
+
+   }
+   
+   .searchinput {
+    width: 25vw;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .searchinput::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .searchinput:focus, searchinput:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+
+    fill: #9e9ea7;
+    width: 1.5vw;
+    height: 1rem;
+   }
+   #instalogo{
+    width: 13rem;
+    height: 4rem;
+   }
+   #logos{  
+    float:  right;
+    position: relative;
+
+    
+    display: flex;
+    align-items:center;
+
+   }
+   #profile-pics{
+    width: 2rem;
+    height: 2rem;
+
+    clip-path: circle( at center);
+   
+
+}
+.post-logo{
+    width: 2vw !important;
+
+
+   
+}
+   
+   
+   
