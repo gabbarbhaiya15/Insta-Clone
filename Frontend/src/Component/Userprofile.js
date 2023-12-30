@@ -15,7 +15,7 @@ export default function Userprofile(){
  
 const follow = async ()=>{
   console.log(userid)
-await axios.put("http://localhost:5000/follow",{followid: userid},{withCredentials: true})
+await axios.put("https://insta-clone-6vph.onrender.com/follow",{followid: userid},{withCredentials: true})
 .then((res)=>{
   console.log(res.data)
 })
@@ -27,7 +27,7 @@ await axios.put("http://localhost:5000/follow",{followid: userid},{withCredentia
 
 const unfollow = ()=>{
 
-  axios.put("http://localhost:5000/unfollow",{unfollowid: userid},{withCredentials: true})
+  axios.put("https://insta-clone-6vph.onrender.com/unfollow",{unfollowid: userid},{withCredentials: true})
   .then((res)=>{
     console.log(res.data)
   })
@@ -50,7 +50,7 @@ const unfollow = ()=>{
  
  useEffect(()=>{
   
-axios.get(`http://localhost:5000/friendsid/${userid}`,{withCredentials:true})
+axios.get(`https://insta-clone-6vph.onrender.com/friendsid/${userid}`,{withCredentials:true})
 
 .then((result)=>{
   
