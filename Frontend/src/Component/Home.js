@@ -15,7 +15,7 @@ const {userData} = useUser();
 
 
 const makeComment = (text,postId)=>{
-  axios.put("http://localhost:5000/comment",{postId :postId,text:text},{withCredentials:true})
+  axios.put("https://insta-clone-6vph.onrender.com/comment",{postId :postId,text:text},{withCredentials:true})
   .then((res)=>{
     console.log(res)
 
@@ -27,7 +27,7 @@ console.log("error in client side while making commnent ")
 
 const likepost=(id)=>{
 
-  axios.put("http://localhost:5000/like",{postId:id},{withCredentials:true})
+  axios.put("https://insta-clone-6vph.onrender.com/like",{postId:id},{withCredentials:true})
   .then((res)=>{
 console.log(res.data)
 setLike(prevstate=>!prevstate)
@@ -58,7 +58,7 @@ console.log(err)
 
 const unlikepost=(id)=>{
 
-  axios.put("http://localhost:5000/unlike",{postId:id},{withCredentials:true})
+  axios.put("https://insta-clone-6vph.onrender.com/unlike",{postId:id},{withCredentials:true})
   .then((res)=>{
     console.log(res.data)
     setLike(prevstate=>!prevstate)
@@ -88,7 +88,7 @@ console.log(err)
 
       
 useEffect(()=>{
-axios.get("http://localhost:5000/allpost",{withCredentials:true})
+axios.get("https://insta-clone-6vph.onrender.com/allpost",{withCredentials:true})
 .then((res)=>{
   console.log(res.data);
   const postarray = res.data.map(items=> items);
