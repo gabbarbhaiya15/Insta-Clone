@@ -8,7 +8,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 const auth = require('../middleware/Auth');
-const { async } = require('postcss-js');
+
 
 router.get('/',auth,async(req,res)=>{
     console.log("protecting")
