@@ -21,7 +21,7 @@ function clicked(){
 }
 const fetchuser= async(query) =>{
   setsearch(query);
-await axios.post("http://localhost:5000/search",{query},{withcredentials:true})
+await axios.post("https://insta-clone-6vph.onrender.com/search",{query},{withcredentials:true})
 .then((res)=>{
   console.log(res.data);
   const dataarray= res.data.map(item=>item) 
