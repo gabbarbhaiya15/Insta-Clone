@@ -17,7 +17,7 @@ export default function Profile(){
 
  const Deletepost = async (postId)=>{
 
-await axios.delete(`http://localhost:5000/remove/${postId}`,{withCredentials:true})
+await axios.delete(`https://insta-clone-6vph.onrender.com/remove/${postId}`,{withCredentials:true})
  .then((Result)=>{
    console.log(Result)
  })
@@ -38,7 +38,7 @@ await axios.delete(`http://localhost:5000/remove/${postId}`,{withCredentials:tru
  
  useEffect(()=>{
   
-axios.get("http://localhost:5000/mypost",{withCredentials:true})
+axios.get("https://insta-clone-6vph.onrender.com/mypost",{withCredentials:true})
 .then((res)=>{
   
 
