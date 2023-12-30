@@ -46,7 +46,11 @@ app.use(cookieParser());
   .catch((err)=>{console.log(err)}) ;
 
 
+app.get("/",(req,res) =>{
+res.setHeader("Access-Control-Allow-Credentials","true");
+  res.send("api is running");
 
+});
 app.use('/register', signup);
 
 app.use('/login', Login);
