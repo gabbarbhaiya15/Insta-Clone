@@ -20,7 +20,7 @@ const Unfollow = require('./controller/Unfollow');
 const UpdateProfile = require('./controller/Updateprofile');
 const Friendspost = require('./controller/FriendsPost');
 const Logout = require('./controller/Logout');
-const Comment = require('./controller/Comment');
+
 const protected = require('./controller/Protected');
 const search = require('./controller/Search');
 
@@ -30,10 +30,12 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const port =  process.env.PORT || 5000;
 app.use(bodyParser.json());
-app.use(cors({credentials: true,
-  origin: ['http://localhost:3000']
+const corsOptions = {
+  credentials: true,
+  origin: 'https://g-frontend.onrender.com',
+};
 
-}));
+app.use(cors(corsOptions));
 app.use(cookieParser());
   //  mongodb connection
   mongoose.connect('mongodb+srv://gabbarbhaiya:Shubham123@gabbarbhaiya.2lvenhx.mongodb.net/Users',{
@@ -61,7 +63,7 @@ app.use('/allpost',AllPost);
 app.use('/mypost',Mypost);
 app.use('/like',Like);
 app.use('/unlike',Unlike);
-app.use('./comment',Comment);
+
 app.use('/remove',Deletepost);
 app.use('/friendsid',FriendsID);
 app.use('/follow', Follow);
